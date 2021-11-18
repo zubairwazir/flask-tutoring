@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First web App</title>
+    <link rel="stylesheet" href={{ url_for(
+    'static', filename='style.css') }}>
+</head>
+<body>
+{% for i in names %}
+<h1>{{ i }}</h1>
+{% endfor %}
+</body>
+</html>
